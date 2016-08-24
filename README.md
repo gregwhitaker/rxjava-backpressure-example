@@ -1,6 +1,8 @@
 rxjava-backpressure-example
 ===
 
+[![Build Status](https://travis-ci.org/gregwhitaker/rxjava-backpressure-example.svg?branch=master)](https://travis-ci.org/gregwhitaker/rxjava-backpressure-example)
+
 This example shows how backpressure can be used to throttle incoming events from an Observable.
 
 In the example an Observable is created that emits a message once per second.  If the message number of the emitted 
