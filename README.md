@@ -1,6 +1,12 @@
 rxjava-backpressure-example
 ===
 
+This example shows how backpressure can be used to throttle incoming events from an Observable.
+
+In the example an Observable is created that emits a message once per second.  If the message number of the emitted 
+message is evenly divisible by ten the subscriber will sleep for five seconds, during which time backpressure will cause
+the emitting observable to buffer messages.
+
 ##Running the Example
 The example can be run using the following gradle command:
 
